@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WW</title>
+    <style media="screen">
+      body{
+        background: black; color: #fff; text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello <%= name %></h1>
+    <h2>Age: <%= data.age %></h2>
+    <h2>Job: <%= data.job %></h2>
+    <ul>
+      <% data.lang.forEach(function(item){ %>
+        <li><%= item %></li>
+    <%  }); %>
+    </ul>
+  </body>
+</html>
